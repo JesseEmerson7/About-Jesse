@@ -67,12 +67,31 @@ nav{
 }
 
 nav ul li {
-    display: inline;
-    padding: 15px;
-    padding-top: 30px;
-    font-size: 20px;
-    border-color: var(--dark);
-    border-width: 5px;
-    z-index: 10;
-    
+    display: inline; 
+
 }
+
+.hero-image {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-image: linear-gradient(rgba(37, 89, 110, 0.5), rgba(16, 115, 158, 0.5)), url("../images/02-hero-bg.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 150px;
+  }
+
+.hero-text {
+    position: relative;
+    right: 10%;
+    color: var(--dark);
+}
+
+.hero-text h2 {
+    background-color: var(--secondary);
+    padding: 0 10px;
+}
+
