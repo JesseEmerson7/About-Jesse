@@ -94,4 +94,24 @@ nav ul li {
     background-color: var(--secondary);
     padding: 0 10px;
 }
+main {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+}
 
+.about-me {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.about-me h3 {
+    border-right: solid;
+    margin-right: 20px;
+    text-align: right;
+    padding-right: 10px;
+    color: var(--tertiary);
+    font-size: 2rem;
+}
+    
