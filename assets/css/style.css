@@ -19,7 +19,7 @@
     background-color: var(--light);
     line-height: 1.5;
   }
-  
+
     nav a {
         text-decoration: none;
         padding: 5px 10px;
@@ -42,4 +42,37 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--dark);
+}
+
+h1 {
+    padding-left: 16rem;
+    padding-right: 1rem;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background-color: var(--secondary);
+    color: var(--dark);
+    
+}
+
+nav{
+    padding-right: 100px;
+    padding-left:100px;
+    padding-top: 30px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+    padding-top: 30px;
+    font-size: 20px;
+    border-color: var(--dark);
+    border-width: 5px;
+    z-index: 10;
+    
 }
