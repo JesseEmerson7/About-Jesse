@@ -96,12 +96,13 @@ main {
 
 .about-me {
     display: flex;
-    flex-direction: start;
+    flex-direction: center;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .about-me p {
-    flex-basis: 80%;
+  flex: 2 1 0;  
 }
 
 .about-me h3, #work-text {
@@ -111,16 +112,44 @@ main {
     padding-right: 10px;
     color: var(--tertiary);
     font-size: 2rem;
-    order: 0;
+   
+}
+#work-text {
+padding: 35px;
+padding-bottom: 30rem;
+
 }
     .work {
-        display: inline-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
 
     }
+    .surf {
+        height: 300px;
+    width: 1102px;
+    margin-bottom: 1rem;
+    background:url(../images/02-portfolio-4.jpg);
+    background-size: cover;
+    border: 3px solid var(--secondary);
+        
+        
+    }
 
-    .card-wall {
+.surf div {
+    background-color: var(--secondary);
+    width: 10rem;
+}
+    .small-card {
+        border: solid 2px var(--secondary);
+        
+      
+    }
+
+    .cards2 {
+        display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-wrap: wrap;
     }
 
