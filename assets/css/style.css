@@ -38,12 +38,6 @@
         color: var(--primary);
       }
 
-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 header {
     display: flex;
     justify-content:space-between;
@@ -75,7 +69,7 @@ nav ul li {
     display: flex;
     justify-content: end;
     align-items: end;
-    background-image: linear-gradient(rgba(37, 89, 110, 0.5), rgba(16, 115, 158, 0.5)), url("../images/02-hero-bg.jpg");
+    background-image: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)), url("../images/02-hero-bg.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,17 +95,32 @@ main {
 }
 
 .about-me {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+    display: flex;
+    flex-direction: start;
+    flex-wrap: wrap;
 }
 
-.about-me h3 {
+.about-me p {
+    flex-basis: 80%;
+}
+
+.about-me h3, #work-text {
     border-right: solid;
     margin-right: 20px;
     text-align: right;
     padding-right: 10px;
     color: var(--tertiary);
     font-size: 2rem;
+    order: 0;
 }
-    
+    .work {
+        display: inline-flex;
+        
+
+    }
+
+    .card-wall {
+        justify-content: center;
+        flex-direction: row;
+    }
+
