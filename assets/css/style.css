@@ -102,7 +102,7 @@ main {
 }
 
 .about-me p {
-    width: 1163px;
+    width: 80%;
 }
 
 .about-me h3, #work-text {
@@ -112,45 +112,68 @@ main {
     padding-right: 10px;
     color: var(--tertiary);
     font-size: 2rem;
+    width: 100%;
    
+}
+
+.work-aside {
+    display: flex;
+    justify-content: center;
+    width: 17%;
 }
 
     .work {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+    justify-content: center;
         
         
 
     }
     .surf {
         height: 300px;
-    width: 1102px;
+    width: 100%;
     margin-bottom: 1rem;
-    background:url(../images/02-portfolio-4.jpg);
+    background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-portfolio-4.jpg);
     background-size: cover;
     border: 3px solid var(--secondary);
+    display: flex;
+    align-items: end;
         
         
     }
 
 .surf div {
     background-color: var(--secondary);
-    width: 10rem;
+    width: 13rem;
+    height: 6rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
 }
     .small-card {
         border: solid 2px var(--secondary);
-        width: 47%;
-        height: 10rem;
-        margin: 7px;
-        
-      
+        width: 49%;
+        height: 50;
+        display: flex;
+        align-items: end;
+        text-align: center;
+         
     }
-
+.small-card div {
+    background-color: var(--secondary);
+    width: 13rem;
+    height: 6rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
     .cards {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
         
     }
 
@@ -158,5 +181,52 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 100%;
     }
+.led {
+    background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-portfolio-1.jpg);
+    background-size: cover;
+    margin-bottom: 10px;
+}
 
+.calculator {
+    background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-portfolio-2.jpg);
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.puzzels {
+    background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-portfolio-3.jpg);
+    background-size: cover;
+}
+
+.run {
+    background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-run-buddy.jpg);
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-aside {
+    border-right: solid;
+    margin-right: 20px;
+    text-align: right;
+    padding-right: 10px;
+    color: var(--tertiary);
+    font-size: 2rem;
+}
+.footer-contact {
+}
+
+footer ul {
+    
+}
+
+footer ul li {
+    display: inline;
+}
