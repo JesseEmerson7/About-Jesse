@@ -96,14 +96,16 @@ main {
 
 .about-me {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-flow: wrap row;
 }
 
-.about-me p {
-    width: 80%;
+.about-me div {
+   flex: 0 75%;
 }
+
+
+
+
 
 .about-me h3, #work-text {
     border-right: solid;
@@ -112,14 +114,16 @@ main {
     padding-right: 10px;
     color: var(--tertiary);
     font-size: 2rem;
-    width: 100%;
-   
+    flex-basis: 15%;
 }
 
-.work-aside {
-    display: flex;
-    justify-content: center;
-    width: 17%;
+#work-text {
+    
+}
+
+.about-me p {
+    flex-grow: 3;
+    flex-basis: 75%;
 }
 
     .work {
@@ -131,15 +135,27 @@ main {
         
 
     }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-grow: 3;
+        flex-basis: 75%;
+        justify-content: center;
+     
+        
+    }
+
+    
+
     .surf {
-        height: 300px;
-    width: 100%;
-    margin-bottom: 1rem;
     background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-portfolio-4.jpg);
     background-size: cover;
     border: 3px solid var(--secondary);
-    display: flex;
-    align-items: end;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 10px;
         
         
     }
@@ -152,14 +168,16 @@ main {
     padding-left: 20px;
     text-align: center;
 }
+.small-card-box {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content:space-evenly;
+   gap: 10px;
+   flex: 1;
+}
     .small-card {
         border: solid 2px var(--secondary);
-        width: 49%;
-        height: 50;
-        display: flex;
-        align-items: end;
-        text-align: center;
-         
+        flex: 1 0 45%;
     }
 .small-card div {
     background-color: var(--secondary);
@@ -168,31 +186,16 @@ main {
     margin-bottom: 20px;
     padding-left: 20px;
 }
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 80%;
-        justify-content: center;
-        
-    }
 
-    .cards2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-    }
+
 .led {
     background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-portfolio-1.jpg);
     background-size: cover;
-    margin-bottom: 10px;
 }
 
 .calculator {
     background: linear-gradient(rgba(26, 74, 132, 0.639), rgba(21, 42, 205, 0.5)),url(../images/02-portfolio-2.jpg);
     background-size: cover;
-    margin-bottom: 10px;
 }
 
 .puzzels {
@@ -208,25 +211,33 @@ main {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.footer-aside {
+.footer-contact {
+flex-basis: 75%;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-evenly;
+    flex-basis: 100;
+}
+/* trying to figure out how to align footer before hour break*/
+footer ul li {
+    display: inline;
+    flex: 1;
+}
+
+#contact-nav {
     border-right: solid;
     margin-right: 20px;
     text-align: right;
     padding-right: 10px;
     color: var(--tertiary);
     font-size: 2rem;
-}
-.footer-contact {
-}
-
-footer ul {
-    
-}
-
-footer ul li {
-    display: inline;
+    flex-basis:15%;
 }
