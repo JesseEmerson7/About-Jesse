@@ -368,19 +368,19 @@ footer ul li {
     }
     
     .footer-contact {
-        padding-left: 5px;
+        
     }
  
     footer{
-        width: 100%;
-    }
-    .surf {
-        
+        flex-basis: 0;
+        align-content: center;
     }
 
     .small-card { width:100%;
         flex-shrink: 1;
     }
+
+    
 
  }
 
