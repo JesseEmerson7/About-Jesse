@@ -131,7 +131,7 @@ main {
 }
 
 .about-me p {
-    flex-grow: 3;
+   
     flex-basis: 75%;
 }
 
