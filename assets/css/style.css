@@ -315,7 +315,7 @@ footer ul li {
 
  /* media q */
 
- @media (max-width:500px) {
+ @media (max-width:800px) {
     html {
         display: flex;
         flex-direction: column;
