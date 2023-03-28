@@ -323,7 +323,7 @@ footer ul li {
     }
 
     main {
-        padding: 2px;
+        padding: 4px;
     }
 
     h1 {
@@ -367,7 +367,14 @@ footer ul li {
     }
     .small-card-box {
         flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: center;
 
+    }
+
+    .small-card div {
+        width: 50px;
     }
     
     .footer-contact {
