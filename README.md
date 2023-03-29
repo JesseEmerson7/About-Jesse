@@ -16,7 +16,7 @@ Open web page in any preferred browser. Scroll or use navigation bar to be direc
 
 Access <a href="https://jesseemerson7.github.io/about-Jesse/">Live webpage.</a>
 
-<img src="/assets/images/127.0.0.1_5500_.png" alt="Jesse Emerson's portfolio" title="About Me">
+<img src="./assets/images/127.0.0.1_5500_.png" alt="Jesse Emerson's portfolio" title="About Me">
 
 ## Credits
 
